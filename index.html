@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+   <head>
+      <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+      <link
+         rel="preconnect"
+         href="https://fonts.gstatic.com"
+         crossorigin="anonymous"
+         />
+      <meta charset="utf-8" />
+      <meta content='width' name='MobileOptimized'/>
+      <meta content='true' name='HandheldFriendly'/>
+      <meta content='yes' name='apple-mobile-web-app-capable'/>
+      <title>PARSER &#187; HTML Escaper</title>
+      <meta name="description" content="XML Parser Or Converter Tool Will Help You To Convert Or Parse HTML To XML, Javascript To XML For Your Website So That This Code Won't Be Executed" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta content='IE=edge; IE=9; IE=8; IE=7; chrome=1' http-equiv='X-UA-Compatible'/>
+      <meta property="og:title" content="PARSER &#187; HTML Escaper" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="" />
+      <meta property="og:image" content="img/parser.png" />
+      <link rel="apple-touch-icon" href="icon.png" />
+      <link rel="stylesheet" href="css/normalize.min.css" />
+      <link rel="stylesheet" href="css/uikit.min.css" />
+      <meta name="theme-color" content="#fafafa" />
+      <!-- Favicon -->
+      <link href='apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'/>
+      <!-- ./ Favicon -->
+      <style type="text/css">
+         #siteTitle {
+         font-family: "Pacifico", cursive;
+         }
+         body {
+         font-family: "Poppins", sans-serif;
+         }
+      </style>
+      <script type="text/javascript" src="js/defer.min.js"></script>
+      <!-- Google Fonts  -->
+      <script type="deferjs">
+         //<![CDATA[
+         (function () {
+            var a = document.createElement("link");
+            a.href = "https://fonts.googleapis.com/css?family=Pacifico|Poppins&display=swap";
+            a.rel = "stylesheet";
+            a.type = "text/css";
+            document.getElementsByTagName("head")[0].appendChild(a);
+         })();
+         //]]>
+      </script>
+      <noscript>
+         <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://fonts.googleapis.com/css?family=Pacifico|Poppins"
+            />
+      </noscript>
+      <!-- ./ Google Fonts -->
+   </head>
+   <body>
+      <div class="uk-container">
+         <div class="uk-text-center">
+            <h1 id="siteTitle">PARSER</h1>
+         </div>
+         <p>
+            This XML Parser Or Converter Tool Will Help You To Convert Or Parse HTML
+            To XML, Javascript To XML For Your Blogger So That This Code Won't Be
+            Executed. It Will Help You In Syntax Highlighting, Parsing Google
+            Adsense Code For Blogger.
+         </p>
+         <div class="uk-text-center">
+            <p>Enter Your HTML OR JAVASCRIPT Code Here</p>
+         </div>
+         <div class="uk-margin">
+            <textarea
+               class="uk-textarea uk-box-shadow-large formControl"
+               rows="5"
+               placeholder="Enter Your HTML OR Javascript Code Here"
+               onchange="htmlParser(this)"
+               onkeyup="htmlParser(this)"
+               ></textarea>
+         </div>
+         <div class="uk-text-center">
+            <p>Your Parsed Code Here</p>
+         </div>
+         <div class="uk-margin">
+            <textarea
+               id="htmlParser"
+               class="uk-textarea uk-box-shadow-large formControl"
+               rows="5"
+               placeholder="Your Parsed Code Here"
+               onclick="this.select()"
+               onfocus="this.select()"
+               readonly="readonly"
+               ></textarea>
+         </div>
+         <button
+            class="copyClipboard uk-button uk-button-default uk-align-center"
+            data-clipboard-target="#htmlParser"
+            onclick="UIkit.notification({message: '<span uk-icon=\'icon: bell\'></span> Copied Your Parsed Code'})"
+            >
+         <span uk-icon="icon: copy"></span> Copy
+         </button>
+         <p><strong>How To Use?</strong></p>
+         <p>
+            To Use This XML Parser, Just Paste Your Code In First Text Area And
+            Automatically It Will Show Parsed Result On Next Text Area. Then Copy
+            The Code And Paste Where You Want.
+         </p>
+         <div uk-lightbox>
+            <a href="img/parser.png" data-caption="PARSER - HTML Escaper">
+            <img
+               class="uk-align-center"
+               data-src="img/parser.png"
+               width="1280"
+               height="720"
+               alt="PARSER - HTML Escaper"
+               uk-img
+               />
+            </a>
+         </div>
+         <div class="uk-text-center">
+         	<p>Created With <span uk-icon="icon: heart"></span> Using <a href="https://getuikit.com" target="_blank" rel="nofollow" class="uk-icon-link" uk-icon="uikit"></a></p>
+            <p>© 2020 By Mandar Naik</p>
+         </div>
+      </div>
+      <script type="deferjs" src="js/jquery-3.5.1.min.js"></script>
+      <script type="deferjs" src="js/uikit.min.js"></script>
+      <script type="deferjs" src="js/uikit-icons.min.js"></script>
+      <script type="deferjs" src="js/clipboard.min.js"></script>
+      <script type="deferjs">
+         //<![CDATA[
+         function $(htmlParser) {
+            return document.getElementById(htmlParser);
+         }
+         var char2entity = { "'": "&#39;", '"': "&quot;", "<": "&lt;", ">": "&gt;", "&#038;": "&amp;" };
+         function encode_entities(str) {
+            var rv = "";
+            for (var i = 0; i < str.length; i++) {
+               var ch = str.charAt(i);
+               rv += char2entity[ch] || ch;
+            }
+            return rv;
+         }
+         function htmlParser(e) {
+            $("htmlParser").value = encode_entities(e.value);
+         }
+         new ClipboardJS(".copyClipboard");
+         //]]>
+      </script>
+      <!-- Google Analytics -->
+      <script type="deferjs">
+         //<![CDATA[
+         window.ga = function () {
+            ga.q.push(arguments);
+         };
+         ga.q = [];
+         ga.l = +new Date();
+         ga("create", "UA-XXXXX-Y", "auto");
+         ga("set", "anonymizeIp", true);
+         ga("set", "transport", "beacon");
+         ga("send", "pageview");
+         //]]>
+      </script>
+      <script
+         type="deferjs"
+         src="https://www.google-analytics.com/analytics.js"
+         ></script>
+   </body>
+</html>
