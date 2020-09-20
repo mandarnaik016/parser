@@ -16,8 +16,6 @@ Check out the [PARSER](https://mandarnaik016.github.io/parser/)!
 
 ![screenshot](/img/sc1.png)
 
-![screenshot](/img/sc2.png)
-
 ## Author & Support
 
 This Project Was Created By [Mandar Naik](https://github.com/mandarnaik016)
