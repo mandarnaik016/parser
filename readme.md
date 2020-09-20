@@ -8,7 +8,7 @@ Check out the [PARSER](https://mandarnaik016.github.io/parser/)!
 
 ### Show some :heart:
 
-[![GitHub followers](https://img.shields.io/github/followers/mandarnaik016?label=follow&style=for-the-badge)](https://github.com/mandarnaik016/parser)
+[![GitHub followers](https://img.shields.io/github/followers/mandarnaik016?label=follow&style=for-the-badge)](https://github.com/mandarnaik016)
 [![GitHub forks](https://img.shields.io/github/forks/mandarnaik016/parser?label=fork&style=for-the-badge)](https://github.com/mandarnaik016/parser/fork)
 [![Twitter Follow](https://img.shields.io/twitter/follow/_md_naik?style=for-the-badge)](https://mobile.twitter.com/_md_naik)
 
