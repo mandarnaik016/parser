@@ -1,8 +1,8 @@
 # PARSER &#187; HTML Escaper
 
-A Simple Website To Convert OR Parse HTML To XML, Javascript To XML For Your Blogger/Websites So That This Code Won't Be Executed.
+A Simple Tool To Convert OR Parse HTML To XML, Javascript To XML For Your Websites So That This Code Won't Be Executed.
 
-It Will Help You In Syntax Highlighting, Parsing Google Adsense Code For Blogger/Websites.
+It Will Help You In Syntax Highlighting, Parsing Google Adsense Code For Websites.
 
 Check out the [PARSER](https://mandarnaik016.github.io/parser/)!
 
