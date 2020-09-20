@@ -4,9 +4,9 @@ A Simple Tool To Convert OR Parse HTML To XML, Javascript To XML For Your Websit
 
 It Will Help You In Syntax Highlighting, Parsing Google Adsense Code For Websites.
 
-Check out the [PARSER](https://mandarnaik016.github.io/parser/)!
+Check Out The [PARSER](https://mandarnaik016.github.io/parser/)!
 
-### Show some :heart:
+### Show Some :heart:
 
 [![GitHub followers](https://img.shields.io/github/followers/mandarnaik016?label=follow&style=for-the-badge)](https://github.com/mandarnaik016)
 [![GitHub forks](https://img.shields.io/github/forks/mandarnaik016/parser?label=fork&style=for-the-badge)](https://github.com/mandarnaik016/parser/fork)
