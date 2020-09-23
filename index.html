@@ -8,11 +8,10 @@
   <meta content="width" name="MobileOptimized" />
   <meta content="true" name="HandheldFriendly" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
-  <title>PARSER &#187; HTML Escaper</title>
-  <meta name="description"
-    content="XML Parser Or Converter Tool Will Help You To Convert Or Parse HTML To XML, Javascript To XML For Your Website So That This Code Won't Be Executed" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta content="IE=edge; IE=9; IE=8; IE=7; chrome=1" http-equiv="X-UA-Compatible" />
+  <title>PARSER &#187; HTML ESCAPER</title>
+  <meta name="description" content="XML Parser Or Converter Tool Will Help You To Convert Or Parse HTML To XML, Javascript To XML For Your Website So That This Code Won't Be Executed" />
   <meta property="og:title" content="PARSER &#187; HTML Escaper" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mandarnaik016.github.io/parser/" />
@@ -20,38 +19,15 @@
   <link rel="stylesheet" href="css/normalize.min.css" />
   <link rel="stylesheet" href="css/uikit.min.css" />
   <meta name="theme-color" content="#fafafa" />
-  <!-- Favicon -->
   <link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" />
   <link href="favicon/android-chrome-192x192.png" rel="icon" sizes="192x192" />
   <link href="favicon/android-chrome-512x512.png" rel="icon" sizes="512x512" />
   <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
-  <!-- ./ Favicon -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico|Poppins&display=swap" />
   <style type="text/css">
-    #siteTitle {
-      font-family: "Pacifico", cursive;
-    }
-
-    body {
-      font-family: "Poppins", sans-serif;
-    }
+  #siteTitle{font-family:"Pacifico",cursive}body{font-family:"Poppins",sans-serif}
   </style>
   <script type="text/javascript" src="js/defer.min.js"></script>
-  <!-- Google Fonts  -->
-  <script type="deferjs">
-      //<![CDATA[
-      (function () {
-         var a = document.createElement("link");
-         a.href = "https://fonts.googleapis.com/css?family=Pacifico|Poppins&display=swap";
-         a.rel = "stylesheet";
-         a.type = "text/css";
-         document.getElementsByTagName("head")[0].appendChild(a);
-      })();
-      //]]>
-    </script>
-  <noscript>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico|Poppins" />
-  </noscript>
-  <!-- ./ Google Fonts -->
 </head>
 
 <body>
@@ -82,7 +58,7 @@
         readonly="readonly"></textarea>
     </div>
     <button class="copyClipboard uk-button uk-button-default uk-align-center" data-clipboard-target="#htmlParser"
-      onclick="UIkit.notification({message: '<span uk-icon=\'icon: bell\'></span> Copied Your Parsed Code'})">
+      onclick="UIkit.notification({message: '<span uk-icon=\'icon: copy\'></span> Copied...!',pos: 'bottom-right',timeout: 3000})">
       <span uk-icon="icon: copy"></span> Copy
     </button>
     <div>
@@ -100,6 +76,7 @@
       </a>
     </div>
     <div class="uk-text-center">
+      <p><a href="#" uk-tooltip="Back To Top...!" uk-totop uk-scroll></a></p>
       <p>
         Created With <span uk-icon="icon: heart"></span> Using
         <a href="https://getuikit.com" target="_blank" rel="nofollow" class="uk-icon-link" uk-icon="uikit"></a>
@@ -113,36 +90,13 @@
   <script type="deferjs" src="js/clipboard.min.js"></script>
   <script type="deferjs">
       //<![CDATA[
-      function $(htmlParser) {
-         return document.getElementById(htmlParser);
-      }
-      var char2entity = { "'": "&#39;", '"': "&quot;", "<": "&lt;", ">": "&gt;", "&#038;": "&amp;" };
-      function encode_entities(str) {
-         var rv = "";
-         for (var i = 0; i < str.length; i++) {
-            var ch = str.charAt(i);
-            rv += char2entity[ch] || ch;
-         }
-         return rv;
-      }
-      function htmlParser(e) {
-         $("htmlParser").value = encode_entities(e.value);
-      }
-      new ClipboardJS(".copyClipboard");
+      function $(a){return document.getElementById(a)}var char2entity={"'":"&#39;",'"':"&quot;","<":"&lt;",">":"&gt;","&#038;":"&amp;"};function encode_entities(c){var d="";for(var a=0;a<c.length;a++){var b=c.charAt(a);d+=char2entity[b]||b}return d}function htmlParser(a){$("htmlParser").value=encode_entities(a.value)}new ClipboardJS(".copyClipboard");
       //]]>
     </script>
   <!-- Google Analytics -->
   <script type="deferjs">
       //<![CDATA[
-      window.ga = function () {
-         ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date();ga("create","UA-XXXXX-Y","auto");ga("set","anonymizeIp",true);ga("set","transport","beacon");ga("send","pageview");
       //]]>
     </script>
   <script type="deferjs" src="https://www.google-analytics.com/analytics.js"></script>
